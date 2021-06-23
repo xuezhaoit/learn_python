@@ -95,30 +95,91 @@
 '''
 # ========list============
 # list是一种有序的集合
-classmates = ['Michael', 'Bob', 'Tracy']
-# len()函数可以获得list元素的个数
-print( len(classmates) )
-# 索引是 0 开始
-print( classmates[1] )
-# insert 添加
-classmates.insert(1,'123')
-# 追加末尾
+# classmates = ['Michael', 'Bob', 'Tracy']
+# # len()函数可以获得list元素的个数
+# print( len(classmates) )
+# # 索引是 0 开始
+# print( classmates[1] )
+# # insert 添加
+# classmates.insert(1,'123')
+# # 追加末尾
 
-classmates.append('Adam')
-print( classmates )
-# pop 删除 classmates.pop(2)
-classmates.pop()
-print(classmates)
+# classmates.append('Adam')
+# print( classmates )
+# # pop 删除 classmates.pop(2)
+# classmates.pop()
+# print(classmates)
 
-# ========tuple============
-classmates1 = ('Michael', 'Bob', 'Tracy')
+# # ========tuple============
+# classmates1 = ('Michael', 'Bob', 'Tracy')
 
 '''
     条件和循环
 '''
+# =========条件=========
+# age = 19
+# if age >= 18:
+#     print('adult')
+# elif 16 < age <18:
+#     print('青年')
+#     print('132')
+# else:
+#     print('child')
+# ========循环===============
+# nameList = ['name1','name2','name3']
+# for name in nameList:
+#     print(name)
+# # 生成list
+# print(list(range(10)))
+# ========while=========
+# num = 99
+# sum = 0
+# while num >10:
+#     num = num - 2;
+#     sum = sum + num 
+# print (sum)
+# =========break==============
+# num = 99
+# sum = 0
+# while num >10:
+#     num = num - 2;
+#     sum = sum + num 
+#     if sum > 100:
+#         break
+# print (sum)
+# print (num)
+# ========continue=========
+# n = 0
+# while n < 10:
+#     n = n + 1
+#     if n % 2 == 0: # 如果n是偶数，执行continue语句
+#         continue # continue语句会直接继续下一轮循环，后续的print()语句不会执行
+#     print(n)
+
+    
+    
 
 '''
     dict 和 set
 '''
-
+# =========dict===========
+# dict 也称 map
+score = {'name1':90,'name2':80,'name3':79}
+print(score['name1'])
+# in 判断 key是否存在
+print(
+    'name1' in score
+)
+# get 获取 不会报错
+print ( score.get('name4') )
+# =========set============
+s = set([1, 1, 2, 2, 3, 3])
+print(s)
+# add 添加 romve 移除
+s.add(4)
+print(s)
+s.add(4)
+print(s)
+s.remove(4)
+print(s)
 
