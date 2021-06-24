@@ -6,6 +6,17 @@
 
 '''
     数据类型和变量
+    字符串和编码
+    list 和 tuple
+    条件和循环
+    dict 和 set
+'''
+
+# =============================
+
+
+'''
+    数据类型和变量
 
     整数、浮点数
     字符串
@@ -93,8 +104,8 @@
     list 和 tuple
 
 '''
-# ========list============
-# list是一种有序的集合
+# ========list []============
+# list是一种有序的集合[]
 # classmates = ['Michael', 'Bob', 'Tracy']
 # # len()函数可以获得list元素的个数
 # print( len(classmates) )
@@ -110,7 +121,7 @@
 # classmates.pop()
 # print(classmates)
 
-# # ========tuple============
+# # ========tuple ()============
 # classmates1 = ('Michael', 'Bob', 'Tracy')
 
 '''
@@ -162,7 +173,7 @@
 '''
     dict 和 set
 '''
-# =========dict===========
+# =========dict {}===========
 # dict 也称 map
 score = {'name1':90,'name2':80,'name3':79}
 print(score['name1'])
