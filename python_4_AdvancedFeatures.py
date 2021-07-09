@@ -48,29 +48,43 @@
 # [变脸 for item1 in d 条件1]
 # [m + n for m in 'ABC' for n in 'XYZ']
 # 等效于
-L = []
-for chr1 in "ABC":
-    for chr2 in "XYZ":
-        L.append(chr1+chr2)
-print(L)   
-print([chr1+chr2 for chr1 in "ABC" for chr2 in "XYZ" ]) 
-# if 语句
-print( [x for x in range(10) if x % 2 == 0] )
-# if else 语句
-print( [ x if x % 2 == 0 else 0 for x in range(10) ] )
+# L = []
+# for chr1 in "ABC":
+#     for chr2 in "XYZ":
+#         L.append(chr1+chr2)
+# print(L)   
+# print([chr1+chr2 for chr1 in "ABC" for chr2 in "XYZ" ]) 
+# # if 语句
+# print( [x for x in range(10) if x % 2 == 0] )
+# # if else 语句
+# print( [ x if x % 2 == 0 else 0 for x in range(10) ] )
 
 # ===========列表生成器================
 # 这种一边循环一边计算的机制，称为生成器：generator
 # 创建generator
 # 创建L和g的区别仅在于最外层的[]和()，L是一个list，而g是一个generator。
-g = (x*x for x in range(10))
-# 打印 generator
-# 方法1
-# print(next(g))
-# print(next(g))
-# print(next(g))
-# 方法2
-for item in g:
-    print(item)
+# g = (x*x for x in range(10))
+# # 打印 generator
+# # 方法1
+# # print(next(g))
+# # print(next(g))
+# # print(next(g))
+# # 方法2
+# for item in g:
+#     print(item)
+
+
+# ==============迭代器====================
+
+
+# 我们已经知道，可以直接作用于for循环的数据类型有以下几种：
+
+# 一类是集合数据类型，如list、tuple、dict、set、str等；
+
+# 一类是generator，包括生成器和带yield的generator function。
+
+# 这些可以直接作用于for循环的对象统称为可迭代对象：Iterable。
+
+# 可以使用isinstance()判断一个对象是否是Iterable对象：
     
 
